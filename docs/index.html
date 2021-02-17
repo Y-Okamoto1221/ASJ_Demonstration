@@ -22,11 +22,11 @@
     <br>
     <br>
     <p>
-    このページはオノマトペからの環境音合成[1]のデモページです．私たちは以下に示す，系列変換モデル[2]を用いたオノマトペからの環境音合成手法を提案します．
+    このページはオノマトペを用いた環境音合成[1]のデモページです．私たちは以下に示す，系列変換モデル[2]を用いたオノマトペからの環境音合成手法を提案します．
     </p>
     <ul>
   　　<li><b>オノマトペのみを入力とする環境音合成 (seq2seq)</b></li>
-  　　<li><b>オノマトペと音響イベントラベルを入力とする環境音合成 (seq2seq + event labels)</b></li>
+  　　<li><b>オノマトペと音響イベントラベルを入力とする環境音合成 (seq2seq + event label)</b></li>
         本手法ではオノマトペに加え，Decoderへの条件付けのために音響イベントラベルを使用します．
 　　</ul>
     <p>
@@ -40,12 +40,12 @@
     <tr>
     <th>Natural sound</th>
     <th>KanaWave</th>
-    <th>Seq2seq<br><font color="#0000ff">(Proposed)</font></th>
-    <th colspan="4">Seq2Seq + event label<br><font color="#0000ff">(Proposed)</font></th>
+    <th>Seq2seq<br><font color="#0000ff">(提案法)</font></th>
+    <th colspan="4">Seq2Seq + event label<br><font color="#0000ff">(提案法)</font></th>
     </tr>
     <td colspan="7"><left>&nbsp;オノマトペ；<b>チィッ (/ ch i: q /)</b></left></td>
     <tr>
-    <th class="td-css-bottom"></th>
+    <th>笛の音</th>
     <th class="td-css-bottom"></th>
     <th class="td-css-bottom"></th>
     <th>カップを叩く音</th>
@@ -104,7 +104,7 @@
 
 
     <tr>
-    <th class="td-css-bottom"></th>
+    <th>ゴミ箱を叩く音</th>
     <th class="td-css-bottom"></th>
     <th class="td-css-bottom"></th>
     <th>ドラムを叩く音</th>
@@ -148,7 +148,7 @@
 
 
     <tr>
-    <th class="td-css-bottom"></th>
+    <th>ベルを鳴らす音</th>
     <th class="td-css-bottom"></th>
     <th class="td-css-bottom"></th>
     <th>ベルを鳴らす音</th>
@@ -194,7 +194,7 @@
 
 
     <tr>
-    <th class="td-css-bottom"></th>
+    <th>ひげ剃りの動作音</th>
     <th class="td-css-bottom"></th>
     <th class="td-css-bottom"></th>
     <th>紙を引き裂く音</th>
@@ -242,12 +242,12 @@
     </td>
     </div>
     </tr>
-    <td colspan="7"><left><&nbsp;オノマトペ：<b>スャリスャリ (/ sh a r i sh a r i /)</b></left></td>
+    <td colspan="7"><left>&nbsp;オノマトペ：<b>スャリスャリ (/ sh a r i sh a r i /)</b></left></td>
 
 
 
     <tr>
-    <th class="td-css-bottom"></th>
+    <th>マラカスの音</th>
     <th class="td-css-bottom"></th>
     <th class="td-css-bottom"></th>
     <th>マラカスの音</th>
@@ -285,49 +285,6 @@
     Your browser does not support the audio element.
     </audio>
     </center>
-    </td>
-    </tr>
-    </div>
-    <td colspan="7"><left><&nbsp;オノマトペ：<b>コンー (/ k o N: /)</b></left></td>
-
-
-    <tr>
-    <th class="td-css-bottom"></th>
-    <th class="td-css-bottom"></th>
-    <th class="td-css-bottom"></th>
-    <th>ドラムを叩く音</th>
-    <th>金属製のゴミ箱を叩く音</th>
-    </tr>
-    <tr>
-    <td class="td-css-top">
-    <audio controls="">
-    <source src="./sound/natural/trashbox_038_koN_.wav" type="audio/wav">
-    Your browser does not support the audio element.
-　　</audio>
-    </td>
-    <td class="td-css-top">
-    <audio controls="">
-    <source src="./sound/KanaWave/koN_.wav" type="audio/wav">
-    Your browser does not support the audio element.
-　　</audio>
-    </td>
-    <td class="td-css-top">
-    <audio controls="">
-    <source src="./sound/seq2seq/drum_seed1000_seq2seq_koN_.wav" type="audio/wav">
-    Your browser does not support the audio element.
-　　</audio>
-    </td>
-    <td class="td-css-top">
-    <audio controls="">
-    <source src="./sound/eventconditioning/drum/drum_EventConditioning_koN_.wav" type="audio/wav">
-    Your browser does not support the audio element.
-　　</audio>
-    </td>
-    <td class="td-css-top">
-    <audio controls="">
-    <source src="./sound/eventconditioning/trashbox/trashbox_EventConditioning_koN_.wav" type="audio/wav">
-    Your browser does not support the audio element.
-    </audio>
     </td>
     </tr>
     </div>
